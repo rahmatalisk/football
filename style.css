@@ -1,0 +1,163 @@
+@font-face {
+    font-family: popins;
+    src: url(Poppins/Poppins-Regular.ttf);
+}
+body{
+    font-family: popins;
+    margin: 0;
+    padding: 0;
+}
+/*-----------------------------------------
+---------------- common style --------------------
+--------------------------------------------------- */
+.container{
+    width: 1160px;
+    /* display: grid;
+    justify-content: center; */
+    margin: 0 auto;
+}
+p{
+    font-size: 16px;
+}
+
+
+/*--------------------------------------------------------
+--------------------- header -----------------------------
+-------------------------------------------------------- */
+header{
+    color: #ffffff;
+    background-color: #34249C;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+ul{
+    padding-left: 0;
+}
+ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 36px;
+}
+.login{
+    display: flex;
+    align-items: center;
+}
+.login img{
+    width: 24px;
+    margin-right: 8px;
+}
+.live{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    position: absolute;
+    color: #ffffff;
+}
+.live img{
+    width: 24px;
+    margin-left: 8px;
+    margin-top: 0;
+}
+.ad{
+    display: flex;
+    padding: 70px 0px;
+    
+}
+.ad-heading{
+    font-size: 64px;
+    width: 485px;
+    margin: 0;
+}
+.ad-img{
+    padding: 0px 140px;
+    padding-bottom: 0px;
+}
+.ad-img img{
+    width: 456px;
+    height: 438px;
+}
+/* -------------------------------------------------------------
+-----------------------------players------------------------------------- */
+.players{
+    padding: 50px 15px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+.player{
+    padding: 22px;
+    box-shadow: 0px 0px 20px 5px rgba(128, 128, 128, 0.164),-0px -0px 20px 0px rgba(128, 128, 128, 0.157);
+    border-radius: 5px;
+}
+.player img{
+    width: 320px;
+}
+
+/* ---------------------------------------
+--------------------watch now-------------
+---------------------------------------- */
+h1{
+    font-size: 48px;
+}
+.watch-img{
+    width: 567px;
+    height: 427px;
+    margin-left: 69px;
+}
+.watch-now{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+/* ------------------------
+---------------footer ----------
+------------ ----------------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+}
+footer img{
+    width: 485px;
+    margin: 0 auto;
+}
+.social-icon img{
+    width: 32px;
+    height: 32px;
+}
+footer p{
+    font-size: 18px;
+}
+
+
+@media only screen and ( max-width:600px) {
+    .container{
+        width: 100%;
+    }
+    nav ul{
+        display: none;
+    }
+    nav .login{
+        left: 90%;
+    }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .watch-now{
+        flex-direction: column;
+    }
+}
